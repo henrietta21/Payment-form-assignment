@@ -1,0 +1,169 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color:whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.wrapper {
+    background-color: #fff;
+    border: 2px solid #dd3b3b;
+    width: 40%;
+    padding: 2em;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+}
+h2 {
+    background-color: #ffffff;
+    color: #dd3b3b;
+    font-size: 2rem;
+    margin-bottom: 1em;
+    text-align: center;
+}
+h4 {
+    padding-bottom: 1em;
+    color: #dd3b3b;
+}
+.input-group {
+    margin: 1em 0em;
+    width: 100%;
+    display: flex;
+    margin-bottom: 2em;
+}
+.input-box {
+    width: 100%;
+    margin-right:.8em;
+    position: relative;
+}
+.input-box:last-child {
+    margin-right: 0em;
+}
+.name {
+    padding: 1em .5em 1em 5em;
+    width: 100%;
+    border: 1px solid grey;
+    outline: none;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    border-radius: 50px;
+    color: #333;
+    text-transform: capitalize;
+}
+.name:focus, .dob:focus {
+    border: 1.5px solid #dd3b3b ;
+}
+.input-box .icon,
+.input-box .fa-envelope {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute ;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    color: black;
+    background-color: #dd3b3b;
+    border-radius: 50px 0px 0px 50px;
+}
+.dob {
+    width: 30%;
+    padding: .5em;
+    transition: 0.3s;
+    outline: none;
+    border: 1px solid #c0bfbf;
+    border-radius: 50px;
+    text-align: center;
+}
+input[type=radio]{
+    width: 40px;
+}
+.input-box select {
+    display: inline-block;
+    width: 50%;
+    padding: 1em;
+    border-radius: 50px;
+    float: left;
+    color:#333;;
+    text-align: center;
+    outline: none;
+    border: 1px solid grey;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.input-box select:focus,
+input[type=tel]:focus {
+    border: 1px solid  #dd3b3b;
+}
+input[type=tel]{
+    padding: 1em .5em 1em 5em;
+    border-radius: 50px;
+    border: 1px solid grey;
+    outline: none;
+    transition:0.5s ;
+}
+button {
+    width: 50%;
+    outline: none;
+    border: 0px;
+    background-color: #dd3b3b;
+    color: black;
+    padding: 1em .5em;
+    border-radius: 50px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.5s ease-out;
+    transform: scale(1);
+    margin: 0em 7em;
+    cursor: pointer;
+}
+button:hover {
+    transform: scale(1.2);
+    background-color: #e77474;
+}
+@media screen and (max-width:770px) {
+    .wrapper {
+        width: 100%;
+        height: 100%;
+        border: none;
+        box-shadow: none;
+        padding-top: 8em;
+        
+    }
+    button{
+        margin: 0em 10em;
+    }
+}
+@media screen and (max-width:670px){
+    body{
+        background-color: white;
+    }
+   .wrapper {
+        border: none;
+        box-shadow: none;
+        padding-top: 2em;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .input-group {
+        flex-direction: column;
+        margin: .2em 0em;
+    }
+    .input-box {
+        margin: .5em 0em;
+    }
+    input[type=tel]{
+        width: 100%;
+    }
+    button{
+        margin: 0em 0em 1em 0em;
+    }
+}
